@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: README.markdown</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>README.markdown</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>README.markdown
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Sat Jan 31 20:21:35 +0800 2009</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+<a href="../classes/GoogleAjaxSearch.html">GoogleAjaxSearch</a>
+</p>
+<h6>==========</h6>
+<p>
+Wrapper plugin for Google AJAX Search API
+</p>
+<p>
+Example
+</p>
+<h6>=</h6>
+<p>
+<a
+href="../classes/GoogleAjaxSearch.html#M000001">GoogleAjaxSearch.web_search</a>(:q
+=&gt; &#8216;test&#8217;)
+</p>
+<p>
+`[{&quot;GsearchResultClass&quot;=&gt;&quot;GwebSearch&quot;,
+&quot;title&quot;=&gt;&quot;<b>Test</b>.com Web Based <b>Testing</b> and
+Certification Software v2.0&quot;, &quot;url&quot;=&gt;&quot;<a
+href="http://www.test.com">www.test.com</a>/&quot;,
+&quot;cacheUrl&quot;=&gt;&quot;<a
+href="http://www.google.com/search?q=cache:S9XHtkEncW8J:www.test.com">www.google.com/search?q=cache:S9XHtkEncW8J:www.test.com</a>&quot;,
+&quot;content&quot;=&gt;&quot;Easily Author and Administer your own
+Training Content, <b>Tests</b>, and Certification Programs Online.
+<b>Test</b>.com is Web Based Software.&quot;,
+&quot;visibleUrl&quot;=&gt;&quot;<a
+href="http://www.test.com">www.test.com</a>&quot;,
+&quot;unescapedUrl&quot;=&gt;&quot;<a
+href="http://www.test.com">www.test.com</a>/&quot;,
+&quot;titleNoFormatting&quot;=&gt;&quot;Test.com Web Based Testing and
+Certification Software v2.0&quot;},
+{&quot;GsearchResultClass&quot;=&gt;&quot;GwebSearch&quot;,
+&quot;title&quot;=&gt;&quot;Speakeasy - Speed <b>Test</b>&quot;,
+&quot;url&quot;=&gt;&quot;<a
+href="http://www.speakeasy.net/speedtest">www.speakeasy.net/speedtest</a>/&quot;,
+&quot;cacheUrl&quot;=&gt;&quot;<a
+href="http://www.google.com/search?q=cache:71lCly1h_zMJ:www.speakeasy.net">www.google.com/search?q=cache:71lCly1h_zMJ:www.speakeasy.net</a>&quot;,
+&quot;content&quot;=&gt;&quot;<b>Test</b> the speed of your internet
+connection with Speakeasy&amp;39;s speed <b>test</b>.&quot;,
+&quot;visibleUrl&quot;=&gt;&quot;<a
+href="http://www.speakeasy.net">www.speakeasy.net</a>&quot;,
+&quot;unescapedUrl&quot;=&gt;&quot;<a
+href="http://www.speakeasy.net/speedtest">www.speakeasy.net/speedtest</a>/&quot;,
+&quot;titleNoFormatting&quot;=&gt;&quot;Speakeasy - Speed Test&quot;},
+&#8230; {&quot;GsearchResultClass&quot;=&gt;&quot;GwebSearch&quot;,
+&quot;title&quot;=&gt;&quot;Adobe - <b>Test</b> Adobe Shockwave and Flash
+Players&quot;, &quot;url&quot;=&gt;&quot;<a
+href="http://www.adobe.com/shockwave/welcome">www.adobe.com/shockwave/welcome</a>/&quot;,
+&quot;cacheUrl&quot;=&gt;&quot;<a
+href="http://www.google.com/search?q=cache:9eiY90BNAkYJ:www.adobe.com">www.google.com/search?q=cache:9eiY90BNAkYJ:www.adobe.com</a>&quot;,
+&quot;content&quot;=&gt;&quot;<b>Test</b> Adobe Shockwave &amp;amp; Flash
+Players. When you see the animation playing below the labeled box,
+<b>&#8230;</b> <b>Test</b> your Macromedia Authorware Web Player
+installation. <b>&#8230;</b>&quot;, &quot;visibleUrl&quot;=&gt;&quot;<a
+href="http://www.adobe.com">www.adobe.com</a>&quot;,
+&quot;unescapedUrl&quot;=&gt;&quot;<a
+href="http://www.adobe.com/shockwave/welcome">www.adobe.com/shockwave/welcome</a>/&quot;,
+&quot;titleNoFormatting&quot;=&gt;&quot;Adobe - Test Adobe Shockwave and
+Flash Players&quot;}]
+</p>
+<p>
+<a
+href="../classes/GoogleAjaxSearch.html#M000001">GoogleAjaxSearch.web_search</a>(:q
+=&gt; &#8216;test&#8217;,:rsz =&gt; &#8216;small&#8217;)
+[{&quot;GsearchResultClass&quot;=&gt;&quot;GwebSearch&quot;,
+&quot;title&quot;=&gt;&quot;<b>Test</b>.com Web Based <b>Testing</b> and
+Certification Software v2.0&quot;, &quot;url&quot;=&gt;&quot;<a
+href="http://www.test.com">www.test.com</a>/&quot;,
+&quot;cacheUrl&quot;=&gt;&quot;<a
+href="http://www.google.com/search?q=cache:S9XHtkEncW8J:www.test.com">www.google.com/search?q=cache:S9XHtkEncW8J:www.test.com</a>&quot;,
+&quot;content&quot;=&gt;&quot;Easily Author and Administer your own
+Training Content, <b>Tests</b>, and Certification Programs Online.
+<b>Test</b>.com is Web Based Software.&quot;,
+&quot;visibleUrl&quot;=&gt;&quot;<a
+href="http://www.test.com">www.test.com</a>&quot;,
+&quot;unescapedUrl&quot;=&gt;&quot;<a
+href="http://www.test.com">www.test.com</a>/&quot;,
+&quot;titleNoFormatting&quot;=&gt;&quot;Test.com Web Based Testing and
+Certification Software v2.0&quot;},
+{&quot;GsearchResultClass&quot;=&gt;&quot;GwebSearch&quot;,
+&quot;title&quot;=&gt;&quot;Speakeasy - Speed <b>Test</b>&quot;,
+&quot;url&quot;=&gt;&quot;<a
+href="http://www.speakeasy.net/speedtest">www.speakeasy.net/speedtest</a>/&quot;,
+&quot;cacheUrl&quot;=&gt;&quot;<a
+href="http://www.google.com/search?q=cache:71lCly1h_zMJ:www.speakeasy.net">www.google.com/search?q=cache:71lCly1h_zMJ:www.speakeasy.net</a>&quot;,
+&quot;content&quot;=&gt;&quot;<b>Test</b> the speed of your internet
+connection with Speakeasy&amp;39;s speed <b>test</b>.&quot;,
+&quot;visibleUrl&quot;=&gt;&quot;<a
+href="http://www.speakeasy.net">www.speakeasy.net</a>&quot;,
+&quot;unescapedUrl&quot;=&gt;&quot;<a
+href="http://www.speakeasy.net/speedtest">www.speakeasy.net/speedtest</a>/&quot;,
+&quot;titleNoFormatting&quot;=&gt;&quot;Speakeasy - Speed Test&quot;},
+{&quot;GsearchResultClass&quot;=&gt;&quot;GwebSearch&quot;,
+&quot;title&quot;=&gt;&quot;NerdTests.com Fun <b>Tests</b> - Nerd
+Quiz&quot;, &quot;url&quot;=&gt;&quot;<a
+href="http://www.nerdtests.com/ft_nq.php">www.nerdtests.com/ft_nq.php</a>&quot;,
+&quot;cacheUrl&quot;=&gt;&quot;<a
+href="http://www.google.com/search?q=cache:qQvNO0k55XIJ:www.nerdtests.com">www.google.com/search?q=cache:qQvNO0k55XIJ:www.nerdtests.com</a>&quot;,
+&quot;content&quot;=&gt;&quot;Take the Nerd <b>Test</b> to determine your
+Nerdiness and create your own nerdy, fun <b>tests</b> here!&quot;,
+&quot;visibleUrl&quot;=&gt;&quot;<a
+href="http://www.nerdtests.com">www.nerdtests.com</a>&quot;,
+&quot;unescapedUrl&quot;=&gt;&quot;<a
+href="http://www.nerdtests.com/ft_nq.php">www.nerdtests.com/ft_nq.php</a>&quot;,
+&quot;titleNoFormatting&quot;=&gt;&quot;NerdTests.com Fun Tests - Nerd
+Quiz&quot;}, {&quot;GsearchResultClass&quot;=&gt;&quot;GwebSearch&quot;,
+&quot;title&quot;=&gt;&quot;Personality <b>test</b> based on Jung -
+Myers-Briggs typology&quot;, &quot;url&quot;=&gt;&quot;<a
+href="http://www.humanmetrics.com/cgi-win/JTypes1.htm">www.humanmetrics.com/cgi-win/JTypes1.htm</a>&quot;,
+&quot;cacheUrl&quot;=&gt;&quot;<a
+href="http://www.google.com/search?q=cache:pQDPQucrOesJ:www.humanmetrics.com">www.google.com/search?q=cache:pQDPQucrOesJ:www.humanmetrics.com</a>&quot;,
+&quot;content&quot;=&gt;&quot;Online <b>test</b> based on Jung-Myers-Briggs
+typology provides your personality formula, the description of your type,
+list of occupations, and option to assess <b>&#8230;</b>&quot;,
+&quot;visibleUrl&quot;=&gt;&quot;<a
+href="http://www.humanmetrics.com">www.humanmetrics.com</a>&quot;,
+&quot;unescapedUrl&quot;=&gt;&quot;<a
+href="http://www.humanmetrics.com/cgi-win/JTypes1.htm">www.humanmetrics.com/cgi-win/JTypes1.htm</a>&quot;,
+&quot;titleNoFormatting&quot;=&gt;&quot;Personality test based on Jung -
+Myers-Briggs typology&quot;}] `
+</p>
+<p>
+Copyright (c) 2009 Inspire Synergy, released under the MIT license
+</p>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
